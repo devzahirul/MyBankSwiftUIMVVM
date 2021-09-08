@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "bankMe.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
