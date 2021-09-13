@@ -10,24 +10,17 @@ import SwiftUI
 struct MainView: View {
     
     @State var showNext = false
+    @State var completedOnBoarding = false
     
     var body: some View {
         VStack {
             if showNext == false {
                 LaunchingView(next: $showNext)
             } else {
-                NavigationView {
-                    OnBoardingFirstStepView {
-                        OnBoardingFirstStepView {
-                            OnBoardingFirstStepView {
-                                Text("End")
-                                    .hideNavigationBar()
-                            }.hideNavigationBar()
-                        }
-                        .hideNavigationBar()
-                    }
-                    .hideNavigationBar()
-                    
+                if completedOnBoarding {
+                    Text("Welcome DashBoardView!")
+                } else {
+                OnBoardingView(hasCompletedOnBoarding: $completedOnBoarding)
                 }
             }
         }//: VStack
