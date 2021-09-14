@@ -18,7 +18,7 @@ struct MainView: View {
                 LaunchingView(next: $showNext)
             } else {
                 if completedOnBoarding {
-                    Text("Welcome DashBoardView!")
+                    DashBoardView()
                 } else {
                 OnBoardingView(hasCompletedOnBoarding: $completedOnBoarding)
                 }
