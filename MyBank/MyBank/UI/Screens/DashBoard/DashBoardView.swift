@@ -159,7 +159,7 @@ struct DashBoardView: View {
             Spacer()
             
         }.padding(.horizontal)
-        }
+        }.hideNavigationBar()
     }
 }
 
