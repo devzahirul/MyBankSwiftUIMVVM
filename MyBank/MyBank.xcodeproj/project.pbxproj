@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA29A52526EF30610050DCFB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29A52426EF30610050DCFB /* OnBoardingView.swift */; };
+		FA29A52726EF38E80050DCFB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29A52626EF38E80050DCFB /* Colors.swift */; };
+		FA89B27926F09B5200F75715 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA89B27B26F09B5200F75715 /* Localizable.strings */; };
 		FAAAE8D026E8F98D00645DFA /* View+NavigationBarHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAE8CF26E8F98D00645DFA /* View+NavigationBarHidden.swift */; };
 		FAAAE8D226E9060800645DFA /* OnBoardingSecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAE8D126E9060800645DFA /* OnBoardingSecondStepView.swift */; };
 		FAB0F4B226E6B98E00944986 /* MybankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4B126E6B98E00944986 /* MybankApp.swift */; };
@@ -18,11 +20,15 @@
 		FAB0F4C726E798DF00944986 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4C626E798DF00944986 /* Images.swift */; };
 		FAB0F4CB26E79A2F00944986 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CA26E79A2F00944986 /* MainView.swift */; };
 		FAB0F4CD26E79B3100944986 /* OnBoardingFirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CC26E79B3100944986 /* OnBoardingFirstStepView.swift */; };
-		FAB0F4CF26E79DC200944986 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CE26E79DC200944986 /* Localizable.swift */; };
+		FAB0F4CF26E79DC200944986 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CE26E79DC200944986 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA29A52426EF30610050DCFB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		FA29A52626EF38E80050DCFB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FA89B27A26F09B5200F75715 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA89B27C26F09B5B00F75715 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA89B27D26F09B5F00F75715 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FAAAE8CF26E8F98D00645DFA /* View+NavigationBarHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarHidden.swift"; sourceTree = "<group>"; };
 		FAAAE8D126E9060800645DFA /* OnBoardingSecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSecondStepView.swift; sourceTree = "<group>"; };
 		FAB0F4AE26E6B98E00944986 /* Mybank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mybank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +41,7 @@
 		FAB0F4C626E798DF00944986 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FAB0F4CA26E79A2F00944986 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FAB0F4CC26E79B3100944986 /* OnBoardingFirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFirstStepView.swift; sourceTree = "<group>"; };
-		FAB0F4CE26E79DC200944986 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		FAB0F4CE26E79DC200944986 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 				FAB0F4B126E6B98E00944986 /* MybankApp.swift */,
 				FAB0F4B326E6B98E00944986 /* ContentView.swift */,
 				FAB0F4BA26E6B98F00944986 /* Info.plist */,
+				FA89B27B26F09B5200F75715 /* Localizable.strings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -115,19 +122,20 @@
 			isa = PBXGroup;
 			children = (
 				FAAAE8CE26E8F96300645DFA /* CustomViews */,
-				FAB0F4C526E798CD00944986 /* Constants */,
+				FAB0F4C526E798CD00944986 /* UIConstants */,
 				FAB0F4C126E7988E00944986 /* Screens */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		FAB0F4C526E798CD00944986 /* Constants */ = {
+		FAB0F4C526E798CD00944986 /* UIConstants */ = {
 			isa = PBXGroup;
 			children = (
 				FAB0F4C626E798DF00944986 /* Images.swift */,
-				FAB0F4CE26E79DC200944986 /* Localizable.swift */,
+				FAB0F4CE26E79DC200944986 /* Localization.swift */,
+				FA29A52626EF38E80050DCFB /* Colors.swift */,
 			);
-			path = Constants;
+			path = UIConstants;
 			sourceTree = "<group>";
 		};
 		FAB0F4C826E799A500944986 /* Main */ = {
@@ -190,6 +198,8 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
+				fr,
 			);
 			mainGroup = FAB0F4A526E6B98E00944986;
 			productRefGroup = FAB0F4AF26E6B98E00944986 /* Products */;
@@ -207,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB0F4B926E6B98F00944986 /* Preview Assets.xcassets in Resources */,
+				FA89B27926F09B5200F75715 /* Localizable.strings in Resources */,
 				FAB0F4B626E6B98F00944986 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAAE8D026E8F98D00645DFA /* View+NavigationBarHidden.swift in Sources */,
+				FA29A52726EF38E80050DCFB /* Colors.swift in Sources */,
 				FAB0F4CD26E79B3100944986 /* OnBoardingFirstStepView.swift in Sources */,
-				FAB0F4CF26E79DC200944986 /* Localizable.swift in Sources */,
+				FAB0F4CF26E79DC200944986 /* Localization.swift in Sources */,
 				FA29A52526EF30610050DCFB /* OnBoardingView.swift in Sources */,
 				FAB0F4B426E6B98E00944986 /* ContentView.swift in Sources */,
 				FAB0F4C726E798DF00944986 /* Images.swift in Sources */,
@@ -232,6 +244,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA89B27B26F09B5200F75715 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA89B27A26F09B5200F75715 /* en */,
+				FA89B27C26F09B5B00F75715 /* da */,
+				FA89B27D26F09B5F00F75715 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FAB0F4BB26E6B98F00944986 /* Debug */ = {
