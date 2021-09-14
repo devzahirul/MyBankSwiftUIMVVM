@@ -10,6 +10,7 @@
 		FA29A52526EF30610050DCFB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29A52426EF30610050DCFB /* OnBoardingView.swift */; };
 		FA29A52726EF38E80050DCFB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29A52626EF38E80050DCFB /* Colors.swift */; };
 		FA89B27926F09B5200F75715 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA89B27B26F09B5200F75715 /* Localizable.strings */; };
+		FA89B28026F0A53A00F75715 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89B27F26F0A53A00F75715 /* DashBoardView.swift */; };
 		FAAAE8D026E8F98D00645DFA /* View+NavigationBarHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAE8CF26E8F98D00645DFA /* View+NavigationBarHidden.swift */; };
 		FAAAE8D226E9060800645DFA /* OnBoardingSecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAE8D126E9060800645DFA /* OnBoardingSecondStepView.swift */; };
 		FAB0F4B226E6B98E00944986 /* MybankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4B126E6B98E00944986 /* MybankApp.swift */; };
@@ -29,6 +30,7 @@
 		FA89B27A26F09B5200F75715 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA89B27C26F09B5B00F75715 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA89B27D26F09B5F00F75715 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA89B27F26F0A53A00F75715 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
 		FAAAE8CF26E8F98D00645DFA /* View+NavigationBarHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarHidden.swift"; sourceTree = "<group>"; };
 		FAAAE8D126E9060800645DFA /* OnBoardingSecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSecondStepView.swift; sourceTree = "<group>"; };
 		FAB0F4AE26E6B98E00944986 /* Mybank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mybank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA89B27E26F0A51800F75715 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FA89B27F26F0A53A00F75715 /* DashBoardView.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
 		FAAAE8CE26E8F96300645DFA /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 		FAB0F4C126E7988E00944986 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FA89B27E26F0A51800F75715 /* DashBoard */,
 				FAB0F4C926E799BE00944986 /* OnBoarding */,
 				FAB0F4C826E799A500944986 /* Main */,
 			);
@@ -238,6 +249,7 @@
 				FAB0F4C726E798DF00944986 /* Images.swift in Sources */,
 				FAB0F4B226E6B98E00944986 /* MybankApp.swift in Sources */,
 				FAB0F4CB26E79A2F00944986 /* MainView.swift in Sources */,
+				FA89B28026F0A53A00F75715 /* DashBoardView.swift in Sources */,
 				FAB0F4C426E798B500944986 /* LaunchingView.swift in Sources */,
 				FAAAE8D226E9060800645DFA /* OnBoardingSecondStepView.swift in Sources */,
 			);

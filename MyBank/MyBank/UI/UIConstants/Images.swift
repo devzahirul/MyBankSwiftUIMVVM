@@ -12,6 +12,13 @@ enum AppStaticImages: String {
     case firstStepImage
     case secondStepImage
     case thirdStepImage
+    case dollar_image
+    case profile
+    case widthdraw_money
+    case add_money
+    case invest
+    case save_for_imergency
+    case invite_friend
 }
 
 
