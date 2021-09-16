@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA29A52526EF30610050DCFB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29A52426EF30610050DCFB /* OnBoardingView.swift */; };
 		FA29A52726EF38E80050DCFB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29A52626EF38E80050DCFB /* Colors.swift */; };
+		FA83D35926F16A0F00600445 /* AmountTyperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83D35826F16A0F00600445 /* AmountTyperView.swift */; };
 		FA89B27926F09B5200F75715 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA89B27B26F09B5200F75715 /* Localizable.strings */; };
 		FA89B28026F0A53A00F75715 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89B27F26F0A53A00F75715 /* DashBoardView.swift */; };
 		FA89B28326F0C6AD00F75715 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89B28226F0C6AD00F75715 /* WelcomeView.swift */; };
@@ -28,11 +29,13 @@
 		FAB0F4CB26E79A2F00944986 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CA26E79A2F00944986 /* MainView.swift */; };
 		FAB0F4CD26E79B3100944986 /* OnBoardingFirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CC26E79B3100944986 /* OnBoardingFirstStepView.swift */; };
 		FAB0F4CF26E79DC200944986 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F4CE26E79DC200944986 /* Localization.swift */; };
+		FAF8492E26F2E8BD0080BECF /* PieChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8492D26F2E8BD0080BECF /* PieChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA29A52426EF30610050DCFB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		FA29A52626EF38E80050DCFB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FA83D35826F16A0F00600445 /* AmountTyperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTyperView.swift; sourceTree = "<group>"; };
 		FA89B27A26F09B5200F75715 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA89B27C26F09B5B00F75715 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA89B27D26F09B5F00F75715 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		FAB0F4CA26E79A2F00944986 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FAB0F4CC26E79B3100944986 /* OnBoardingFirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFirstStepView.swift; sourceTree = "<group>"; };
 		FAB0F4CE26E79DC200944986 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		FAF8492D26F2E8BD0080BECF /* PieChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA83D35726F169E200600445 /* AmountTyperView */ = {
+			isa = PBXGroup;
+			children = (
+				FA83D35826F16A0F00600445 /* AmountTyperView.swift */,
+			);
+			path = AmountTyperView;
+			sourceTree = "<group>";
+		};
 		FA89B27E26F0A51800F75715 /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +180,8 @@
 		FAB0F4C126E7988E00944986 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8492C26F2E8620080BECF /* GraphView */,
+				FA83D35726F169E200600445 /* AmountTyperView */,
 				FA89B28A26F0E1A100F75715 /* ForgetPassword */,
 				FA89B28726F0DDC100F75715 /* Login */,
 				FA89B28626F0CA2500F75715 /* CreateNewAccount */,
@@ -216,6 +230,14 @@
 				FA29A52426EF30610050DCFB /* OnBoardingView.swift */,
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		FAF8492C26F2E8620080BECF /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8492D26F2E8BD0080BECF /* PieChatView.swift */,
+			);
+			path = GraphView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAAE8D026E8F98D00645DFA /* View+NavigationBarHidden.swift in Sources */,
+				FAF8492E26F2E8BD0080BECF /* PieChatView.swift in Sources */,
 				FA29A52726EF38E80050DCFB /* Colors.swift in Sources */,
 				FAB0F4CD26E79B3100944986 /* OnBoardingFirstStepView.swift in Sources */,
 				FA89B28C26F0E1C700F75715 /* ResetPasswordView.swift in Sources */,
@@ -308,6 +331,7 @@
 				FA89B28026F0A53A00F75715 /* DashBoardView.swift in Sources */,
 				FAB0F4C426E798B500944986 /* LaunchingView.swift in Sources */,
 				FAAAE8D226E9060800645DFA /* OnBoardingSecondStepView.swift in Sources */,
+				FA83D35926F16A0F00600445 /* AmountTyperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
