@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MainView()
+        //MainView()
+        PieChatView(colors: [Color(.chartExtraLightBlue), Color(.chartDarkBlue), Color(.chartBlue)], values: [
+        10000, 32000, 500
+        ], notes: [
+        "Savings",
+            "Investments",
+            "Emergency funds"
+        ])
     }
 }
 
