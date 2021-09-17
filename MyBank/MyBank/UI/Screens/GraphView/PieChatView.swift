@@ -70,9 +70,27 @@ struct PieChatView: View {
         return pieChartDataArray
     }
     
+    @State var showNoticeView = false
     
     var body: some View {
         VStack {
+            HStack{
+                Spacer()
+                Button(action: {
+                    showNoticeView = true
+                }) {
+                    Text("Alerts")
+                        .padding()
+                }
+            }
+            
+            NavigationLink(
+                destination: NotificationView(),
+                isActive: $showNoticeView,
+                label: {
+                    EmptyView()
+                })
+            
         ZStack {
             ForEach(0..<values.count) { i in
                 PieSliceView(pieSliceData: slides[i])
@@ -80,18 +98,22 @@ struct PieChatView: View {
             
             Circle()
                 .fill(Color.white)
-                .frame(width: 250)
+                .frame(width: 190.0)
                 .overlay(
                 Circle()
                     .stroke(lineWidth: 10)
                     .foregroundColor(Color(.chartExtraExtraLightBlue))
                 )
-            
+            VStack {
             Text("$\(values.reduce(0, +))")
-                .font(.system(size: 34.0, weight: .bold, design: .default))
+                .font(.system(size: 24.0, weight: .bold, design: .default))
+                Text("Net worth")
+                    .font(.system(size: 18.0, weight: .regular, design: .default))
+                
+            }
             
         }//:ZStack
-        .frame(height: 500)
+        .frame(height: 300)
         .padding(.horizontal)
             
             HStack {
@@ -101,7 +123,7 @@ struct PieChatView: View {
                         .fill(colors[i])
                         .frame(width: 20, height: 20)
                     Text(notes[i])
-                        .font(.system(size: 14.0, weight: .bold, design: .default))
+                        .font(.system(size: 15.0, weight: .bold, design: .default))
                 }
                 }
                 Spacer()
@@ -119,15 +141,22 @@ struct PieChatView: View {
                         }
                             Rectangle()
                                 .frame(height: 0.5)
+                                .foregroundColor(.gray)
+                            
+                            HStack {
+                                Text(notes[i])
+                                    .font(.system(size: 15.0, weight: .bold, design: .default))
+                                Spacer()
+                                VStack {
+                                Text("\(values[i])")
+                                    .font(.system(size: 15.0, weight: .bold, design: .default))
+                                    Text("\(values[i])")
+                                        .font(.system(size: 15.0, weight: .light, design: .default))
+                                }
+                            }
                         }
-                        HStack {
-                            Text("1")
-                                .font(.system(size: 15.0, weight: .bold, design: .default))
-                            Spacer()
-                            Text("\(values[i])")
-                                .font(.system(size: 15.0, weight: .bold, design: .default))
-                        }.padding(.vertical)
-                    }
+                       
+                    }.padding(.vertical)
                 }
             }.padding()
             
@@ -136,6 +165,7 @@ struct PieChatView: View {
         
     }
 }
+
 
 struct PieChatView_Previews: PreviewProvider {
     static var previews: some View {
