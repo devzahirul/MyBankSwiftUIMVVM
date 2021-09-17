@@ -19,6 +19,7 @@ enum AppStaticImages: String {
     case invest
     case save_for_imergency
     case invite_friend
+    case widthdraw_icon
 }
 
 
